@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { Code, Layout, Cpu, Zap } from 'lucide-react';
+import RadialOrbitalTimeline from './ui/radial-orbital-timeline';
 import experienceImg from '../assets/experience.png';
 
 const experiences = [
@@ -26,6 +28,53 @@ const experiences = [
     ],
     skills: ["Next.js", "Playwright", "ESP32", "Teamwork"]
   }
+];
+
+const timelineData = [
+  {
+    id: 1,
+    title: "System Architecture",
+    date: "Core",
+    content: "Designing scalable, robust, and full-stack application structures.",
+    category: "Architecture",
+    icon: Code,
+    relatedIds: [3],
+    status: "completed" as const,
+    energy: 90,
+  },
+  {
+    id: 2,
+    title: "UI/UX Engineering",
+    date: "Frontend",
+    content: "Creating pixel-perfect, responsive, and intuitive digital interfaces.",
+    category: "Design",
+    icon: Layout,
+    relatedIds: [4],
+    status: "completed" as const,
+    energy: 85,
+  },
+  {
+    id: 3,
+    title: "Performance Optimization",
+    date: "Optimization",
+    content: "Ensuring lightning-fast load times and smooth client rendering.",
+    category: "Engineering",
+    icon: Cpu,
+    relatedIds: [1, 2],
+    status: "in-progress" as const,
+    energy: 100,
+  },
+  {
+    id: 4,
+    title: "Interactive Motion",
+    date: "Animation",
+    content: "Building engaging micro-interactions and advanced scroll effects.",
+    category: "Experience",
+    icon: Zap,
+    relatedIds: [3],
+    status: "in-progress" as const,
+    energy: 95,
+  },
 ];
 
 const Experience: React.FC = () => {
@@ -111,6 +160,17 @@ const Experience: React.FC = () => {
               
               {/* Subtle ambient glow behind image to enhance 3D feel without framing */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-blue-300/20 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+            </motion.div>
+
+            {/* Bottom Right: Interactive Radial Timeline */}
+            <motion.div 
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="w-full flex flex-col items-center justify-center pt-4"
+            >
+              <RadialOrbitalTimeline timelineData={timelineData} />
             </motion.div>
 
           </div>
