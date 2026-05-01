@@ -1,0 +1,44 @@
+Sai Balkawade
+§ WillyEverGreen | ï sai-balkawade |
+# saibalkawade10@gmail.com | H +91 7720995173
+Summary
+Computer Engineering student with a strong passion for web development and building dynamic, user-friendly
+applications. Actively participates in hackathons and coding competitions, with hands-on experience in fullstack development, real-time systems, and modern web technologies. Focused on creating scalable, innovative,
+and engaging digital experiences.
+Work Experience
+Frontend Intern — XIRCLS December 2025 – Present
+• Working on a CRM-based web platform, focusing on building and improving frontend user interfaces.
+• Developing responsive and reusable UI components using modern frontend technologies.
+• Collaborating with backend and product teams to integrate frontend components with CRM workflows.
+• Improving usability and consistency across dashboards, forms, and data-driven views.
+Technical Member — Project Cell August 2025 – Present
+• Developed ESP32-based mini-games, automation tools using Playwright.
+• Designed and developed the Project Cell website using Next.js, focusing on performance, responsiveness,
+and clean UI.
+• Collaborated in a team environment to design, implement, and test functional prototypes.
+Projects
+ReCode — AI DSA Companion Link to Demo
+• Developed a full-stack DSA mastery platform using React 18, TypeScript, and Tailwind CSS.
+• Integrated Qubrid AI (Qwen3-Coder) to generate multi-tiered code solutions (brute force → optimized).
+• Built a smart revision tracker with MongoDB and Redis caching, secured via JWT and OTP.
+• Deployed on Vercel Serverless Functions to ensure scalable, low-latency execution.
+JOURNI AI — AI-Powered Trip Planner Link to Demo
+• Built an intelligent travel itinerary generator using React 19, Vite, and Tailwind CSS.
+• Integrated Qubrid AI (Mistral 7B) and Google Maps API to deliver personalized, real-time trip plans.
+• Implemented secure authentication using Auth0 with cloud persistence via Firebase.
+• Designed a responsive, visually engaging UI with live hotel and dining recommendations.
+Education
+B.Tech in Computer Engineering, Fr. Conceicao Rodrigues College of Engg. (8.5) 2024 – Present
+Class 12th (Computer Science), RCF Junior College, Alibag (79.67%) 2022 – 2024
+Class 10th, RCF Secondary and Higher Secondary School, Alibag (93.60%) 2021 – 2022
+Skills
+Languages JavaScript, TypeScript, C, Python
+Frontend HTML5, CSS3, React.js, Next.js, Tailwind CSS
+Backend Node.js, Express.js, MongoDB, Redis, Firebase
+Tools Git, REST APIs, Socket.io, JWT Authentication, Auth0, Vercel
+Core Concepts DSA, Authentication & Authorization, Embedded Systems
+Achievements
+• Solved 200+ DSA problems across multiple platforms, strengthening core problem-solving skills.
+• Selected for the final round of the BitNBuild International Hackathon, competing among top teams.
+• Active Open Source Contributor to Sugar Labs, contributing code fixes and improvements to real-world
+educational software.

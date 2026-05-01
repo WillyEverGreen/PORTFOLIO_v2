@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import CustomCursor from './components/CustomCursor';
 import CurvedLoop from './components/CurvedLoop';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         curveAmount={350}
         direction="left"
       />
+      <Experience />
     </div>
   );
 }
