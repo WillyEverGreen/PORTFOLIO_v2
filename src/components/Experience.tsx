@@ -94,12 +94,12 @@ const Experience: React.FC = () => {
           {/* LEFT SIDE: Timeline */}
           <div className="w-full lg:w-3/5 flex flex-col items-start pr-0 lg:pr-12">
             <div className="flex items-center gap-4 mb-4">
-              <div className="h-[2px] w-12 bg-[#21346e]"></div>
-              <span className="font-rubik uppercase tracking-[0.2em] text-sm text-[#21346e] font-bold">Career</span>
+              <div className="h-[2px] w-12 bg-[#1D57AF]"></div>
+              <span className="font-rubik uppercase tracking-[0.2em] text-sm text-[#1D57AF] font-bold">Career</span>
             </div>
             
             <h2 className="font-rubik font-bold uppercase text-[#0a1128] text-5xl md:text-7xl leading-[0.95] tracking-[-2px] md:tracking-[-3px] mb-16">
-              PAST <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#21346e] to-[#42599c]">EXPERIENCES</span>
+              PAST <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1D57AF] to-[#42599c]">EXPERIENCES</span>
             </h2>
 
             <div className="relative border-l-2 border-[#e2e8f0] ml-3 md:ml-4 space-y-16">
@@ -113,7 +113,7 @@ const Experience: React.FC = () => {
                   className="relative pl-8 md:pl-12"
                 >
                   {/* Timeline Dot */}
-                  <div className="absolute w-6 h-6 bg-white border-4 border-[#21346e] rounded-full -left-[13px] top-1 shadow-md"></div>
+                  <div className="absolute w-6 h-6 bg-white border-4 border-[#1D57AF] rounded-full -left-[13px] top-1 shadow-md"></div>
                   
                   <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2 gap-2">
                     <h3 className="font-rubik font-bold text-2xl md:text-3xl text-[#0f172a]">{exp.role}</h3>

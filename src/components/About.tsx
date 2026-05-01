@@ -86,12 +86,12 @@ const About: React.FC = () => {
           {/* Text Content Side */}
           <div className="w-full lg:w-1/2 flex flex-col items-start">
             <div className="flex items-center gap-4 mb-4">
-              <div className="h-[2px] w-12 bg-[#21346e]"></div>
-              <span className="font-rubik uppercase tracking-[0.2em] text-sm text-[#21346e] font-bold">Discover</span>
+              <div className="h-[2px] w-12 bg-[#1D57AF]"></div>
+              <span className="font-rubik uppercase tracking-[0.2em] text-sm text-[#1D57AF] font-bold">Discover</span>
             </div>
             
             <h2 className="font-rubik font-bold uppercase text-[#0a1128] text-5xl md:text-7xl leading-[0.95] tracking-[-2px] md:tracking-[-3px] mb-8">
-              ABOUT <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#21346e] to-[#42599c]">MY JOURNEY</span>
+              ABOUT <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1D57AF] to-[#42599c]">MY JOURNEY</span>
             </h2>
             
             <div className="text-lg text-[#1e293b] space-y-6 font-light leading-normal mb-10 max-w-2xl">
@@ -120,7 +120,7 @@ const About: React.FC = () => {
             {/* Custom CTA button styled for light mode */}
             <button className="relative flex items-center justify-center w-[200px] h-[60px] group transition-transform duration-200 hover:scale-105 active:scale-95 cursor-pointer border-none outline-none bg-transparent p-0">
               <svg
-                className="absolute inset-0 w-full h-full drop-shadow-md text-[#21346e] transition-all duration-300 group-hover:text-[#1a2959]"
+                className="absolute inset-0 w-full h-full drop-shadow-md text-[#1D57AF] transition-all duration-300 group-hover:text-[#1a2959]"
                 viewBox="0 0 200 60"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-[#21346e] overflow-hidden">
+    <section className="relative min-h-screen bg-[#1D57AF] overflow-hidden">
       {/* Background Video */}
       <video
         ref={videoRef}

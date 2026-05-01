@@ -4,10 +4,11 @@ import About from './components/About';
 import CustomCursor from './components/CustomCursor';
 import CurvedLoop from './components/CurvedLoop';
 import Experience from './components/Experience';
+import Showcase from './components/Showcase';
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-[#21346e] text-white">
+    <div className="w-full min-h-screen bg-[#1D57AF] text-white">
       <CustomCursor />
       <Navbar />
       <Hero />
@@ -19,6 +20,7 @@ function App() {
         direction="left"
       />
       <Experience />
+      <Showcase />
     </div>
   );
 }
