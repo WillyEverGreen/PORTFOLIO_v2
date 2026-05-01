@@ -11,6 +11,12 @@
 }
 /* End www.Cursors-4U.com Code */
 
+/* Showcase section: restore default cursor so it doesn't overlap the character */
+#showcase,
+#showcase * {
+  cursor: default !important;
+}
+
 /* Animation for the pulsing effect */
 @keyframes pulse {
   0%, 100% { opacity: 1; }

@@ -5,6 +5,7 @@ import CustomCursor from './components/CustomCursor';
 import CurvedLoop from './components/CurvedLoop';
 import Experience from './components/Experience';
 import Showcase from './components/Showcase';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         direction="left"
       />
       <Experience />
+      <Projects />
       <Showcase />
     </div>
   );

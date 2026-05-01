@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Rubik', sans-serif;
+  --font-rubik: 'Rubik', sans-serif;
+}
+
+/* Blue Luma - https://www.cursors-4u.com/cursor/blue-luma */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/blue-luma-a0a9ad03-32.webp') 32 32, auto !important;
+}
+/* End www.Cursors-4U.com Code */
+
+/* Showcase section: restore default cursor so it doesn't overlap the character */
+#showcase,
+#showcase * {
+  cursor: default !important;
+}
+
+/* Animation for the pulsing effect */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Animation for the ping effect */
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+/* Custom animations for the orbital timeline */
+.animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+.animate-ping { animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+
+/* Transitions */
+.transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.duration-300 { transition-duration: 300ms; }
+.duration-700 { transition-duration: 700ms; }
+.duration-1000 { transition-duration: 1000ms; }
+
+/* Backdrop blur */
+.backdrop-blur-lg { backdrop-filter: blur(16px); }
+
+/* Utilities */
+.bg-gradient-orbital { background: linear-gradient(to bottom right, #6366f1, #3b82f6, #14b8a6); }
+.z-10 { z-index: 10; }
+.z-50 { z-index: 50; }
+.shadow-orbital { box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
+.scale-125 { transform: scale(1.25); }
+.scale-150 { transform: scale(1.5); }
+.opacity-70 { opacity: 0.7; }
+.opacity-50 { opacity: 0.5; }
+
+/* Shadcn Tailwind specific overrides for orbital timeline */
+.bg-card { background-color: rgba(10, 17, 40, 0.95); }
+.text-card-foreground { color: white; }
+.bg-primary { background-color: #3b82f6; }
+.text-primary-foreground { color: white; }
+.bg-destructive { background-color: #ef4444; }
+.text-destructive-foreground { color: white; }
+.bg-secondary { background-color: #1e293b; }
+.text-secondary-foreground { color: white; }
+.text-muted-foreground { color: #94a3b8; }
