@@ -1,0 +1,9 @@
+/* We let Tailwind handle the layout and text styling via className */
+.text-block {
+  /* No specific styling here to preserve About section styles */
+}
+
+.char {
+  will-change: transform;
+  display: inline-block;
+}

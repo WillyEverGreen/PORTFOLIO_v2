@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Rubik', sans-serif;
+  --font-rubik: 'Rubik', sans-serif;
+}
+
+/* Blue Luma - https://www.cursors-4u.com/cursor/blue-luma */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/blue-luma-a0a9ad03-32.webp') 32 32, auto !important;
+}
+/* End www.Cursors-4U.com Code */

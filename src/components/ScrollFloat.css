@@ -1,0 +1,14 @@
+.scroll-float {
+  /* overflow: hidden; Removed to allow multiple lines to wrap naturally if needed, though hidden might be needed for the effect. Let's keep it but ensure it doesn't break multiline text. Wait, overflow: hidden clips vertical overflow during animation. */
+  overflow: hidden;
+}
+
+.scroll-float-text {
+  display: inline-block;
+  /* Removed the hardcoded clamp font-size and alignment to allow Tailwind to control it */
+  line-height: inherit;
+}
+
+.char {
+  display: inline-block;
+}
