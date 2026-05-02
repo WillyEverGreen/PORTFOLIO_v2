@@ -43,38 +43,43 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="w-full bg-white relative overflow-x-clip">
-      <div className="container mx-auto px-6 relative flex flex-col items-center justify-center min-h-[420px] lg:min-h-[480px] pt-32 pb-10">
-        
-        {/* Illustration - Now above text and visible on all screens */}
-        <div className="relative w-full max-w-[420px] lg:max-w-[520px] mb-12 flex justify-center z-0">
-          <div className="absolute inset-0 -z-10 rounded-full bg-[radial-gradient(circle,rgba(29,87,175,0.12),rgba(29,87,175,0)_68%)] blur-3xl scale-110" />
-          <img
-            src={projectsImg}
-            alt="Projects illustration"
-            className="w-full h-auto object-contain drop-shadow-[0_28px_60px_rgba(14,27,68,0.14)]"
-          />
+      <div className="container mx-auto px-6 py-12 lg:py-16">
+        {/* Mobile: show image above text on small devices */}
+        <div className="md:hidden w-full flex justify-center mb-6">
+          <img src={projectsImg} alt="Projects illustration" className="w-full max-w-xs md:max-w-none object-contain drop-shadow-[0_28px_60px_rgba(14,27,68,0.14)]" />
         </div>
+        <div className="flex flex-col md:flex-row items-center md:items-start md:gap-16 w-full">
+          {/* Text block: left on desktop, order on mobile ensures image above */}
+          <div className="md:w-1/2 w-full order-2 md:order-1 text-center md:text-left">
+            <div className="flex items-center gap-4 mb-4 justify-center md:justify-start">
+              <div className="h-[2px] w-12 bg-[#1D57AF]" />
+              <span className="font-rubik uppercase tracking-[0.2em] text-sm text-[#1D57AF] font-bold">
+                Work
+              </span>
+            </div>
 
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl relative z-10">
-          <div className="flex items-center gap-4 mb-4">
-            <div className="h-[2px] w-12 bg-[#1D57AF]" />
-            <span className="font-rubik uppercase tracking-[0.2em] text-sm text-[#1D57AF] font-bold">
-              Work
-            </span>
+            <h2 className="font-rubik font-bold uppercase text-[#0a1128] text-5xl md:text-7xl leading-[0.95] tracking-[-2px] md:tracking-[-3px] mb-4">
+              SELECTED <br />
+              <span className="text-[#3559b7]">PROJECTS</span>
+            </h2>
+
+            <p className="mt-6 text-lg text-slate-500 font-light max-w-xl mb-6 md:mb-0 text-left mx-auto md:mx-0">
+              Scroll through a selection of things I've built — from AI-powered platforms to open source contributions.
+            </p>
           </div>
 
-          <h2 className="font-rubik font-bold uppercase text-[#0a1128] text-5xl md:text-7xl leading-[0.95] tracking-[-2px] md:tracking-[-3px]">
-            SELECTED <br />
-            <span className="text-[#3559b7]">PROJECTS</span>
-          </h2>
-
-          <p className="mt-6 text-lg text-slate-500 font-light max-w-xl mb-12 md:mb-0">
-            Scroll through a selection of things I've built — from AI-powered platforms to open source contributions.
-          </p>
+          {/* Desktop illustration: visible on md and up; mobile shows above via separate block */}
+          <div className="md:w-1/2 w-full order-1 md:order-2 mb-6 md:mb-0 hidden md:flex items-center justify-center">
+            <img src={projectsImg} alt="Projects illustration" className="w-full h-auto object-contain drop-shadow-[0_28px_60px_rgba(14,27,68,0.14)] max-w-md" />
+          </div>
         </div>
+
+      
       </div>
 
-      <StackingCards projects={projects} />
+      <div className="-mt-20 md:-mt-16">
+        <StackingCards projects={projects} />
+      </div>
     </section>
   );
 }
