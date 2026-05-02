@@ -21,8 +21,6 @@ interface FooterProps {
   brandDescription?: string;
   socialLinks?: SocialLink[];
   navLinks?: FooterLink[];
-  creatorName?: string;
-  creatorUrl?: string;
   brandIcon?: React.ReactNode;
   className?: string;
 }
@@ -33,16 +31,17 @@ export const Footer = ({
   brandDescription = "Your description here",
   socialLinks = [],
   navLinks = [],
-  creatorName,
-  creatorUrl,
-  brandIcon,
   className,
 }: FooterProps) => {
   return (
-    <section className={cn("relative w-full mt-0 overflow-hidden bg-[#1D57AF]", className)}>
+    <section
+      className={cn(
+        "relative w-full mt-0 overflow-hidden bg-[#1D57AF]",
+        className,
+      )}
+    >
       <footer className="relative">
-        <div className="max-w-7xl flex flex-col items-center justify-between mx-auto min-h-[30rem] sm:min-h-[35rem] md:min-h-[40rem] relative p-6 py-16 z-10 text-center">
-          
+        <div className="max-w-7xl flex flex-col items-center justify-between mx-auto min-h-[28rem] sm:min-h-[36rem] md:min-h-[46rem] relative p-6 py-16 md:py-20 z-10 text-center">
           {/* Top Section: Branding & Bio */}
           <div className="flex flex-col items-center w-full max-w-3xl mx-auto space-y-6">
             <div className="flex flex-col items-center gap-2">
@@ -55,14 +54,14 @@ export const Footer = ({
                 </span>
               )}
             </div>
-            
+
             <p className="text-white/90 font-medium text-base sm:text-lg md:text-xl max-w-2xl leading-relaxed">
               {brandDescription}
             </p>
           </div>
 
           {/* Middle Section: Socials & Navigation */}
-          <div className="flex flex-col items-center gap-12 w-full">
+          <div className="flex flex-col items-center gap-20 w-full">
             {socialLinks.length > 0 && (
               <div className="flex items-center gap-8">
                 {socialLinks.map((link, index) => (
@@ -98,49 +97,22 @@ export const Footer = ({
             )}
           </div>
 
-          {/* Bottom Section: Copyright & Credits */}
-          <div className="mt-auto pt-12 flex flex-col gap-4 items-center justify-center md:flex-row md:items-center md:justify-between w-full px-4 md:px-0">
-            <p className="text-[10px] sm:text-xs font-light text-white/50 text-center md:text-left uppercase tracking-widest">
-              ©{new Date().getFullYear()} {brandName}. All rights reserved.
-            </p>
-            {creatorName && creatorUrl && (
-              <nav>
-                <a
-                  href={creatorUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[10px] sm:text-xs font-light text-white/50 hover:text-white transition-colors duration-300 uppercase tracking-widest"
-                >
-                  Crafted by {creatorName}
-                </a>
-              </nav>
-            )}
-          </div>
+          {/* Bottom Section - copyright removed to avoid overlap on mobile */}
         </div>
 
-        {/* Large background text - Moved further down and lowered opacity to avoid clashing */}
-        <div 
-          className="text-white/[0.05] font-rubik absolute left-1/2 -translate-x-1/2 bottom-10 md:bottom-20 font-black tracking-tighter pointer-events-none select-none text-center z-0 w-full overflow-hidden"
-          style={{
-            fontSize: 'clamp(3rem, 15vw, 15rem)',
-            lineHeight: 0.8
-          }}
+        {/* Large background text watermark in all sizes (footer bg) */}
+        <div
+          className="absolute left-0 right-0 bottom-0 md:bottom-6 text-white/20 font-rubik font-black tracking-tighter select-none pointer-events-none text-center z-0 whitespace-nowrap leading-none"
+          style={{ fontSize: "clamp(2.5rem, 12vw, 32rem)" }}
         >
           {brandName.toUpperCase()}
         </div>
 
-        {/* Bottom line */}
-        <div className="absolute bottom-32 sm:bottom-34 backdrop-blur-sm h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent w-full left-1/2 -translate-x-1/2 z-0"></div>
-        
-        {/* Bottom Logo Bubble */}
-        <div className="absolute hover:border-white/40 duration-400 drop-shadow-[0_0px_20px_rgba(0,0,0,0.3)] bottom-12 md:bottom-16 backdrop-blur-sm rounded-3xl bg-white/10 left-1/2 border border-white/20 flex items-center justify-center p-3 -translate-x-1/2 z-20 cursor-pointer hover:bg-white/20 transition-all">
-          <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg group">
-            {brandIcon || (
-              <span className="font-rubik font-black text-lg sm:text-xl text-[#1D57AF] group-hover:scale-110 transition-transform">SB</span>
-            )}
-          </div>
-        </div>
+        {/* Bottom line - hidden on mobile */}
+        <div className="hidden md:block absolute bottom-32 sm:bottom-34 backdrop-blur-sm h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent w-full left-1/2 -translate-x-1/2 z-0"></div>
+
+        {/* Bottom Logo Bubble removed to prevent overlap on smaller screens */}
       </footer>
     </section>
   );
-}
+};
