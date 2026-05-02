@@ -3,40 +3,40 @@ import projectsImg from '../assets/projects.png';
 
 const projects = [
   {
-    title: 'Krushak — AgriTech Platform',
+    title: 'SpaceScope — Cosmic Navigator',
     description:
-      'A full-stack mobile + web platform built for Indian farmers. Features AI-powered plant disease detection via Google Vision API, real-time weather alerts, crop reminders, livestock tracking, and multilingual support. Built with React Native, Node.js, MongoDB, and Redis.',
-    link: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&auto=format&fit=crop&q=80',
-    url: '#',
+      'Your Personal Window to the Cosmos — Track satellites, predict cosmic events, and explore space in real-time with stunning AR visualizations. Features ISS Tracker, Space Weather, NASA APOD, 3D Earth Globe with Three.js, and AR Sky View.',
+    link: '/projects-images/spacescope.png',
+    url: 'https://space-scope-lqli.vercel.app',
+    color: '#0a1128',
+    tag: 'React · Three.js · Framer Motion',
+  },
+  {
+    title: 'JOURNI AI — AI Trip Planner',
+    description:
+      'Your Personal AI Travel Companion — Plan the perfect trip in seconds with intelligent itinerary generation powered by Qubrid AI (Mistral 7B). Features real-time Google Places search, hotel recommendations, restaurant suggestions, and secure Auth0 authentication with Firebase.',
+    link: '/projects-images/ai-trip-planner.png',
+    url: 'https://journi-ai-ai-trip-planner-anzy.vercel.app/',
     color: '#1a1a1a',
-    tag: 'Mobile · AI · Full Stack',
+    tag: 'AI · React · Firebase',
   },
   {
-    title: 'AI Trip Planner',
+    title: 'ReCode — DSA Solution Generator',
     description:
-      'An intelligent travel planning web app that generates personalised, real-time trip itineraries using Qubrid AI (Mistral 7B) and Google Maps API. Includes secure Auth0 authentication, cloud persistence via Firebase, and live hotel and dining recommendations.',
-    link: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop&q=80',
-    url: '#',
-    color: '#262626',
-    tag: 'Web · GenAI · Firebase',
-  },
-  {
-    title: 'Open Source at Sugar Labs',
-    description:
-      'Active contributor to Sugar Labs — an educational open source platform used by children worldwide. Shipped real code fixes and improvements that directly impact learning experiences across the globe. Selected for the final round of BitNBuild International Hackathon.',
-    link: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=800&auto=format&fit=crop&q=80',
-    url: '#',
-    color: '#333333',
-    tag: 'Open Source · Community',
-  },
-  {
-    title: 'DSA & Systems Engineering',
-    description:
-      'Solved 200+ DSA problems across LeetCode, Codeforces and GFG, strengthening core problem-solving and algorithmic thinking. Deep expertise in authentication systems, REST API design, Socket.io real-time communication, JWT, and embedded systems with C.',
-    link: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop&q=80',
-    url: '#',
+      'A modern web application that helps developers master Data Structures and Algorithms through AI-powered solution generation and smart revision tracking. Features multi-tier caching with Redis and MongoDB, brute force to optimal solutions, and comprehensive admin dashboard.',
+    link: '/projects-images/recode.png',
+    url: 'https://re-code-v1.vercel.app',
     color: '#121212',
-    tag: 'DSA · Systems · Backend',
+    tag: 'DSA · AI · MongoDB',
+  },
+  {
+    title: 'LEGAL_AI — Legal AI Platform',
+    description:
+      'A legal AI platform that analyzes statutes, extracts key factors, and drafts balanced memos. Cross-references IPC/BNS mappings and supports cross-jurisdiction research.',
+    link: '/projects-images/legal-ai.png',
+    url: 'https://legal-ai-gateway.onrender.com/',
+    color: '#0a1a30',
+    tag: 'AI · LegalTech · RAG',
   },
 ];
 

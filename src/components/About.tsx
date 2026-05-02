@@ -118,7 +118,7 @@ const About: React.FC = () => {
             </div>
             
             {/* Custom CTA button styled for light mode */}
-            <button className="relative flex items-center justify-center w-[200px] h-[60px] group transition-transform duration-200 hover:scale-105 active:scale-95 cursor-pointer border-none outline-none bg-transparent p-0">
+            <a href="mailto:saibalawade10@gmail.com?subject=CV Request" className="relative flex items-center justify-center w-[200px] h-[60px] group transition-transform duration-200 hover:scale-105 active:scale-95 cursor-pointer border-none outline-none bg-transparent p-0">
               <svg
                 className="absolute inset-0 w-full h-full drop-shadow-md text-[#1D57AF] transition-all duration-300 group-hover:text-[#1a2959]"
                 viewBox="0 0 200 60"
@@ -133,7 +133,7 @@ const About: React.FC = () => {
               <span className="relative z-10 font-rubik font-bold uppercase text-[18px] text-white tracking-wider">
                 DOWNLOAD CV
               </span>
-            </button>
+            </a>
           </div>
           
         </div>

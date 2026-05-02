@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-[#1D57AF] overflow-hidden">
+    <section id="home" className="relative min-h-screen bg-[#1D57AF] overflow-hidden">
       {/* Background Video */}
       <video
         ref={videoRef}
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
         </p>
 
         {/* Custom CTA Button */}
-        <button className="relative flex items-center justify-center w-[184px] h-[65px] group transition-transform duration-200 hover:scale-105 active:scale-95 cursor-pointer border-none outline-none bg-transparent p-0">
+        <a href="#projects" className="relative flex items-center justify-center w-[184px] h-[65px] group transition-transform duration-200 hover:scale-105 active:scale-95 cursor-pointer border-none outline-none bg-transparent p-0">
           <svg
             className="absolute inset-0 w-full h-full drop-shadow-md"
             viewBox="0 0 184 65"
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
           <span className="relative z-10 font-rubik font-bold uppercase text-[20px] text-[#161a20] tracking-wide">
             GET STARTED
           </span>
-        </button>
+        </a>
       </div>
     </section>
   );

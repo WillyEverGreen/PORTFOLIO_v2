@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const navItems = ['HOME', 'WORK', 'ABOUT', 'CONTACT'];
+const navItems = ['HOME', 'ABOUT', 'EXPERIENCE', 'PROJECTS'];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -16,6 +16,10 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleHireMe = () => {
+    window.location.href = "mailto:saibalawade10@gmail.com";
+  };
 
   return (
     <>
@@ -45,7 +49,10 @@ const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <button className="hidden md:block px-6 py-2 border border-white/20 rounded-full font-rubik text-sm font-bold text-white hover:bg-white hover:text-black transition-all duration-300 backdrop-blur-sm bg-white/5">
+          <button 
+            onClick={handleHireMe}
+            className="hidden md:block px-6 py-2 border border-white/20 rounded-full font-rubik text-sm font-bold text-white hover:bg-white hover:text-black transition-all duration-300 backdrop-blur-sm bg-white/5"
+          >
             HIRE ME
           </button>
 
@@ -82,7 +89,10 @@ const Navbar = () => {
                 </a>
               ))}
               <button 
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={() => {
+                  handleHireMe();
+                  setMobileMenuOpen(false);
+                }}
                 className="mt-8 px-8 py-3 border border-white/20 rounded-full font-rubik text-lg font-bold text-white hover:bg-white hover:text-black transition-all duration-300"
               >
                 HIRE ME

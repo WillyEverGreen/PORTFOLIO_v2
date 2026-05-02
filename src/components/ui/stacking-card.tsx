@@ -74,7 +74,7 @@ export const Card = ({
         {/* Main Content: Split Layout */}
         <div className="flex flex-col md:flex-row h-full gap-8 md:gap-16">
           {/* Left: Description and CTA */}
-          <div className="w-full md:w-[45%] flex flex-col justify-start md:justify-end pb-4 gap-6">
+          <div className="w-full md:w-[40%] flex flex-col justify-start md:justify-end pb-4 gap-6">
             <p className="text-base md:text-xl leading-relaxed opacity-70 font-light max-w-md">
               {description}
             </p>
@@ -92,12 +92,12 @@ export const Card = ({
           </div>
 
           {/* Right: Image Showcase */}
-          <div className="relative w-full md:w-[55%] h-[250px] md:h-full rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+          <div className="relative w-full md:w-[65%] h-[420px] md:h-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
             <motion.div className="w-full h-full" style={{ scale: imageScale }}>
               <img
                 src={url}
                 alt={title}
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 group-hover:brightness-110"
               />
             </motion.div>
           </div>
