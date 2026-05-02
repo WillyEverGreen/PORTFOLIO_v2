@@ -89,18 +89,33 @@ export function TechAccordion({
 
 function CtaButton({ label }: { label: string }) {
   return (
-    <button className="group flex items-center gap-3 bg-[#1D57AF] text-white px-8 py-4 rounded-full font-bold font-rubik tracking-wide text-sm hover:bg-[#15428a] active:scale-95 transition-all duration-300 shadow-lg shadow-blue-900/20">
-      <span>{label}</span>
-      <span className="relative overflow-hidden flex items-center justify-center w-5 h-5">
-        <ArrowRight
-          size={18}
-          className="absolute transition-all duration-300 ease-in-out group-hover:translate-x-6 group-hover:opacity-0"
+    <button className="relative flex items-center justify-center w-[250px] h-[60px] group transition-transform duration-200 hover:scale-105 active:scale-95 cursor-pointer border-none outline-none bg-transparent p-0">
+      <svg
+        className="absolute inset-0 w-full h-full drop-shadow-md text-[#1D57AF] transition-all duration-300 group-hover:text-[#15428a]"
+        viewBox="0 0 250 60"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15 0 H250 V45 L235 60 H0 V15 Z"
+          fill="currentColor"
         />
-        <ArrowRight
-          size={18}
-          className="absolute -translate-x-6 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-x-0 group-hover:opacity-100"
-        />
-      </span>
+      </svg>
+      <div className="relative z-10 flex items-center gap-3">
+        <span className="font-rubik font-bold uppercase text-[15px] text-white tracking-wider">
+          {label}
+        </span>
+        <span className="relative overflow-hidden flex items-center justify-center w-5 h-5">
+          <ArrowRight
+            size={18}
+            className="absolute text-white transition-all duration-300 ease-in-out group-hover:translate-x-6 group-hover:opacity-0"
+          />
+          <ArrowRight
+            size={18}
+            className="absolute text-white -translate-x-6 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-x-0 group-hover:opacity-100"
+          />
+        </span>
+      </div>
     </button>
   );
 }

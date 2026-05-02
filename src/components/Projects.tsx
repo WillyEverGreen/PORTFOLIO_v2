@@ -43,7 +43,7 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="w-full bg-white relative overflow-x-clip">
-      <div className="container mx-auto px-6 py-12 lg:py-16">
+      <div className="container mx-auto px-6 pt-12 lg:pt-16 pb-2 lg:pb-4">
         {/* Mobile: show image above text on small devices */}
         <div className="md:hidden w-full flex justify-center mb-6">
           <img src={projectsImg} alt="Projects illustration" className="w-full max-w-xs md:max-w-none object-contain drop-shadow-[0_28px_60px_rgba(14,27,68,0.14)]" />
@@ -77,7 +77,7 @@ export default function Projects() {
       
       </div>
 
-      <div className="mt-20 md:mt-32">
+      <div className="mt-8 md:mt-12">
         <StackingCards projects={projects} />
       </div>
     </section>
