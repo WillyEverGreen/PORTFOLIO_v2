@@ -42,34 +42,36 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="w-full bg-white relative" style={{ overflowX: 'clip' }}>
-      {/* Section Header */}
-      <div className="w-full px-6 container mx-auto max-w-7xl flex flex-col justify-center min-h-[480px] lg:min-h-[520px] pt-32 pb-16">
-        <div className="flex flex-col items-start">
+    <section id="projects" className="w-full bg-white relative overflow-x-clip">
+      <div className="container mx-auto px-6 relative flex flex-col justify-center min-h-[420px] lg:min-h-[480px] pt-32 pb-10">
+        <div className="flex flex-col items-start max-w-2xl relative z-10">
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-[2px] w-12 bg-[#1D57AF]"></div>
-            <span className="font-rubik uppercase tracking-[0.2em] text-sm text-[#1D57AF] font-bold">Work</span>
+            <div className="h-[2px] w-12 bg-[#1D57AF]" />
+            <span className="font-rubik uppercase tracking-[0.2em] text-sm text-[#1D57AF] font-bold">
+              Work
+            </span>
           </div>
+
           <h2 className="font-rubik font-bold uppercase text-[#0a1128] text-5xl md:text-7xl leading-[0.95] tracking-[-2px] md:tracking-[-3px]">
             SELECTED <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1D57AF] to-[#42599c]">PROJECTS</span>
+            <span className="text-[#3559b7]">PROJECTS</span>
           </h2>
+
           <p className="mt-6 text-lg text-slate-500 font-light max-w-xl">
             Scroll through a selection of things I've built — from AI-powered platforms to open source contributions.
           </p>
         </div>
+
+        <div className="hidden md:block absolute top-10 right-0 lg:right-[80px] xl:right-[150px] w-[420px] h-[420px] lg:w-[520px] lg:h-[520px] z-0">
+          <div className="absolute inset-0 -z-10 rounded-full bg-[radial-gradient(circle,rgba(29,87,175,0.12),rgba(29,87,175,0)_68%)] blur-3xl" />
+          <img
+            src={projectsImg}
+            alt="Projects illustration"
+            className="w-full h-full object-contain drop-shadow-[0_28px_60px_rgba(14,27,68,0.14)]"
+          />
+        </div>
       </div>
 
-      {/* Image — absolutely pinned to extreme right, partially clipped */}
-      <div className="hidden md:block absolute top-0 right-[120px] lg:right-[160px] w-[460px] h-[460px] lg:w-[520px] lg:h-[520px]">
-        <img
-          src={projectsImg}
-          alt="Projects Decoration"
-          className="w-full h-full object-contain"
-        />
-      </div>
-
-      {/* Stacking Cards */}
       <StackingCards projects={projects} />
     </section>
   );

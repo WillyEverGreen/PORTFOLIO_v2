@@ -3,8 +3,10 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 10rem 0 6rem 0; /* Increased top padding to push text down further below the blobs */
-  background: #ffffff; /* Changed to white background */
+  padding: 10rem 0 6rem 0;
+  /* Increased top padding to push text down further below the blobs */
+  background: #ffffff;
+  /* Changed to white background */
 }
 
 .curved-loop-svg {
@@ -14,7 +16,8 @@
   overflow: visible;
   display: block;
   font-size: 6rem;
-  fill: #1D57AF; /* Changed to blue text */
+  fill: #1D57AF;
+  /* Changed to blue text */
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
