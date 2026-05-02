@@ -6,6 +6,7 @@ import CurvedLoop from './components/CurvedLoop';
 import Experience from './components/Experience';
 import Showcase from './components/Showcase';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Experience />
       <Projects />
       <Showcase />
+      <Footer />
     </div>
   );
 }
