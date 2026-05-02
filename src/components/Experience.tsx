@@ -115,27 +115,27 @@ const Experience: React.FC = () => {
                   {/* Timeline Dot */}
                   <div className="absolute w-6 h-6 bg-white border-4 border-[#1D57AF] rounded-full -left-[13px] top-1 shadow-md"></div>
                   
-                  <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2 gap-2">
-                    <h3 className="font-rubik font-bold text-2xl md:text-3xl text-[#0f172a]">{exp.role}</h3>
-                    <span className="font-rubik text-sm font-medium text-[#64748b] bg-[#f1f5f9] px-3 py-1 rounded-full whitespace-nowrap">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-3 gap-2">
+                    <h3 className="font-rubik font-bold text-3xl md:text-4xl text-[#0f172a] tracking-tight">{exp.role}</h3>
+                    <span className="font-rubik text-base font-medium text-[#64748b] bg-[#f1f5f9] px-4 py-1.5 rounded-full whitespace-nowrap">
                       {exp.date}
                     </span>
                   </div>
                   
-                  <h4 className="font-rubik text-xl text-[#3b82f6] font-medium mb-6">{exp.company}</h4>
+                  <h4 className="font-rubik text-2xl text-[#3b82f6] font-medium mb-6">{exp.company}</h4>
                   
-                  <ul className="space-y-3 mb-6">
+                  <ul className="space-y-4 mb-8">
                     {exp.description.map((desc, i) => (
-                      <li key={i} className="font-rubik text-[#475569] leading-relaxed flex items-start gap-3">
-                        <span className="text-[#3b82f6] mt-1.5 text-lg leading-none">•</span>
+                      <li key={i} className="font-rubik text-[#475569] leading-relaxed flex items-start gap-4 text-lg">
+                        <span className="text-[#3b82f6] mt-1.5 text-2xl leading-none">•</span>
                         <span className="opacity-90">{desc}</span>
                       </li>
                     ))}
                   </ul>
 
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-3">
                     {exp.skills.map((skill, i) => (
-                      <span key={i} className="font-rubik text-xs font-semibold tracking-wider uppercase text-[#1e293b] border border-[#cbd5e1] px-3 py-1 rounded-md bg-white hover:bg-[#f1f5f9] transition-colors cursor-default">
+                      <span key={i} className="font-rubik text-sm font-semibold tracking-[0.08em] uppercase text-[#1e293b] border border-[#cbd5e1] px-4 py-1.5 rounded-md bg-white hover:bg-[#f1f5f9] transition-colors cursor-default">
                         {skill}
                       </span>
                     ))}
