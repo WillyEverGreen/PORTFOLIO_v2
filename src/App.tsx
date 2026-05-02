@@ -4,6 +4,7 @@ import About from './components/About';
 import CustomCursor from './components/CustomCursor';
 import CurvedLoop from './components/CurvedLoop';
 import Experience from './components/Experience';
+import TechStack from './components/TechStack';
 import Showcase from './components/Showcase';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
@@ -22,6 +23,7 @@ function App() {
         direction="left"
       />
       <Experience />
+      <TechStack />
       <Projects />
       <Showcase />
       <Footer />
