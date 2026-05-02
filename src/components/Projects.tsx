@@ -77,7 +77,7 @@ export default function Projects() {
       
       </div>
 
-      <div className="-mt-20 md:-mt-16">
+      <div className="mt-20 md:mt-32">
         <StackingCards projects={projects} />
       </div>
     </section>
