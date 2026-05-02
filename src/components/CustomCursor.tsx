@@ -3,18 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // Component to handle blue custom cursor trails and click effects
 const CustomCursor: React.FC = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isClicking, setIsClicking] = useState(false);
   const [clicks, setClicks] = useState<{ id: number; x: number; y: number }[]>([]);
 
   useEffect(() => {
-    const updateMousePosition = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
     const handleMouseDown = (e: MouseEvent) => {
-      setIsClicking(true);
-      
       // Add a new click ripple
       const newClick = { id: Date.now(), x: e.clientX, y: e.clientY };
       setClicks((prev) => [...prev, newClick]);
@@ -25,18 +17,10 @@ const CustomCursor: React.FC = () => {
       }, 600);
     };
 
-    const handleMouseUp = () => {
-      setIsClicking(false);
-    };
-
-    window.addEventListener('mousemove', updateMousePosition);
     window.addEventListener('mousedown', handleMouseDown);
-    window.addEventListener('mouseup', handleMouseUp);
 
     return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
       window.removeEventListener('mousedown', handleMouseDown);
-      window.removeEventListener('mouseup', handleMouseUp);
     };
   }, []);
 

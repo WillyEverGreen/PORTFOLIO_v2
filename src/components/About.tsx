@@ -90,7 +90,7 @@ const About: React.FC = () => {
               <span className="font-rubik uppercase tracking-[0.2em] text-sm text-[#1D57AF] font-bold">Discover</span>
             </div>
             
-            <h2 className="font-rubik font-bold uppercase text-[#0a1128] text-5xl md:text-7xl leading-[0.95] tracking-[-2px] md:tracking-[-3px] mb-8">
+            <h2 className="font-rubik font-bold uppercase text-[#0a1128] text-4xl sm:text-5xl md:text-7xl leading-[0.95] tracking-[-1px] md:tracking-[-3px] mb-8">
               ABOUT <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1D57AF] to-[#42599c]">MY JOURNEY</span>
             </h2>
             

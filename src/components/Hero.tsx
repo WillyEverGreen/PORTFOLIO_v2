@@ -27,12 +27,12 @@ const Hero: React.FC = () => {
 
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-6 pt-32 md:pt-48 flex flex-col items-start justify-start h-full">
-        <h1 className="font-rubik font-bold uppercase text-white flex flex-col text-6xl md:text-8xl lg:text-[100px] leading-[0.98] tracking-[-2px] md:tracking-[-4px] mb-6">
+        <h1 className="font-rubik font-bold uppercase text-white flex flex-col text-[14vw] sm:text-7xl md:text-8xl lg:text-[100px] leading-[0.95] tracking-[-0.04em] mb-6">
           <span>LESS TALK</span>
           <span>MORE BUILD</span>
         </h1>
         
-        <p className="font-rubik text-lg md:text-xl text-white/80 max-w-xl mb-8 md:mb-12 tracking-wide font-light">
+        <p className="font-rubik text-base sm:text-lg md:text-xl text-white/80 max-w-xl mb-8 md:mb-12 tracking-wide font-light">
           Turning ideas into real, usable web applications.
         </p>
 

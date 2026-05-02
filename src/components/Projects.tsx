@@ -43,8 +43,19 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="w-full bg-white relative overflow-x-clip">
-      <div className="container mx-auto px-6 relative flex flex-col justify-center min-h-[420px] lg:min-h-[480px] pt-32 pb-10">
-        <div className="flex flex-col items-start max-w-2xl relative z-10">
+      <div className="container mx-auto px-6 relative flex flex-col items-center justify-center min-h-[420px] lg:min-h-[480px] pt-32 pb-10">
+        
+        {/* Illustration - Now above text and visible on all screens */}
+        <div className="relative w-full max-w-[420px] lg:max-w-[520px] mb-12 flex justify-center z-0">
+          <div className="absolute inset-0 -z-10 rounded-full bg-[radial-gradient(circle,rgba(29,87,175,0.12),rgba(29,87,175,0)_68%)] blur-3xl scale-110" />
+          <img
+            src={projectsImg}
+            alt="Projects illustration"
+            className="w-full h-auto object-contain drop-shadow-[0_28px_60px_rgba(14,27,68,0.14)]"
+          />
+        </div>
+
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl relative z-10">
           <div className="flex items-center gap-4 mb-4">
             <div className="h-[2px] w-12 bg-[#1D57AF]" />
             <span className="font-rubik uppercase tracking-[0.2em] text-sm text-[#1D57AF] font-bold">
@@ -57,18 +68,9 @@ export default function Projects() {
             <span className="text-[#3559b7]">PROJECTS</span>
           </h2>
 
-          <p className="mt-6 text-lg text-slate-500 font-light max-w-xl">
+          <p className="mt-6 text-lg text-slate-500 font-light max-w-xl mb-12 md:mb-0">
             Scroll through a selection of things I've built — from AI-powered platforms to open source contributions.
           </p>
-        </div>
-
-        <div className="hidden md:block absolute top-10 right-0 lg:right-[80px] xl:right-[150px] w-[420px] h-[420px] lg:w-[520px] lg:h-[520px] z-0">
-          <div className="absolute inset-0 -z-10 rounded-full bg-[radial-gradient(circle,rgba(29,87,175,0.12),rgba(29,87,175,0)_68%)] blur-3xl" />
-          <img
-            src={projectsImg}
-            alt="Projects illustration"
-            className="w-full h-full object-contain drop-shadow-[0_28px_60px_rgba(14,27,68,0.14)]"
-          />
         </div>
       </div>
 
