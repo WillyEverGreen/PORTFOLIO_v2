@@ -119,7 +119,7 @@ const About: React.FC = () => {
             
             {/* Custom CTA button styled for light mode */}
             <a 
-              href="/RESUME_SAII.pdf" 
+              href="/Sai_Balkawade_Resume.pdf" 
               download="Sai_Balkawade_Resume.pdf"
               className="relative flex items-center justify-center w-[200px] h-[60px] group transition-transform duration-200 hover:scale-105 active:scale-95 cursor-pointer border-none outline-none bg-transparent p-0"
             >
